@@ -32,6 +32,20 @@ public class SomeReviews {
         assertTrue(flag);
     }
 
+    @Test
+    void testStringReverse(){
+        String str = "Hello World!";
+        StringBuilder stringBuilder = new StringBuilder("Hello World!");
+        String reverseStr = "";
+        String reverseStrB = stringBuilder.reverse().toString();
+        for (int i = str.length()-1; i>-1; i--){
+            reverseStr+=str.charAt(i);
+        }
+
+        assertEquals(reverseStrB, reverseStr);
+
+    }
+
     String getSubstring(String str, int from){
         return str.substring(from);
     }
