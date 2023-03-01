@@ -3,7 +3,8 @@ package day02;
 public class Task01RemoveAFromFirstTwoChars {
 
     public static void main(String[] args) {
-        System.out.println(deleteAIfItIsFoundInFirstTwoChars("BA"));
+        Task01RemoveAFromFirstTwoChars removeA = new Task01RemoveAFromFirstTwoChars();
+        System.out.println(removeA.deleteAIfItIsFoundInFirstTwoChars("AABB"));
     }
 
     /*
@@ -18,7 +19,7 @@ public class Task01RemoveAFromFirstTwoChars {
 
      */
 
-    public static String deleteAIfItIsFoundInFirstTwoChars(String str){
+    public String deleteAIfItIsFoundInFirstTwoChars(String str){
         str = str.substring(0,2).replaceAll("A", "") + str.substring(2);
         return str;
     }

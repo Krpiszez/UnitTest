@@ -21,7 +21,7 @@ public class Test01ParametirazedTest {
 
     // test similar cases with parameterized test.
     @ParameterizedTest
-    @ValueSource(strings = {"Otgo", "Ali", "Mustafe", "Okan"}) // here we specify the string we will have
+    @ValueSource(strings = {"Otgo", "Ali", "Mustafa", "Okan"}) // here we specify the string we will have
                                                                 // separately in our test methods parameter
     void testLengthUsingParameterizedTest(String str){
         assertTrue(str.length()>0);
