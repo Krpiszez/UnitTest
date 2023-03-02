@@ -1,7 +1,5 @@
 package day02JUnit;
 
-import day02.Task02CheckFirstAndLastTwoCharsSame;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;

@@ -1,4 +1,4 @@
-package day02;
+package day02JUnit;
 
 public class Task02CheckFirstAndLastTwoCharsSame {
 

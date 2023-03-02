@@ -31,8 +31,10 @@ public class Test05_TestingExceptions {
     void testException3(){
         int num1 = 1;
         int num2 = 0;
+        String str = "123As";
 
         assertThrows(ArithmeticException.class, ()-> divide(num1, num2));
+        assertThrows(NumberFormatException.class, ()-> Integer.parseInt(str));
     }
 
     private int divide(int num1, int num2){
