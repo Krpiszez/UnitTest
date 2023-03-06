@@ -45,6 +45,7 @@ public class SomeReviews {
         }
 
         assertEquals(reverseStrB, reverseStr);
+        assertTrue(reverseStrB.equals(reverseStr));
 
     }
 
