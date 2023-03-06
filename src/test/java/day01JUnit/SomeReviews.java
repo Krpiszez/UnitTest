@@ -74,5 +74,16 @@ public class SomeReviews {
         assertEquals(sum, a);
     }
 
+    @Test
+    void swapIntegers(){
+        int a = 2;
+        int b = 5;
+        a = a+b;
+        b = a-b;
+        a = a-b;
+        assertEquals(a,5);
+        assertEquals(b,2);
+    }
+
 
 }
