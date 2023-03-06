@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
+import java.util.stream.IntStream;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -53,6 +55,7 @@ public class SomeReviews {
     @CsvSource(value = {"true, AA", "true, BC", "false, CCC"})
     void testIfLengthSmallerThanTwo(boolean b, String str){
         assertEquals(b, str.length()<=2);
+
     }
 
 
@@ -60,4 +63,16 @@ public class SomeReviews {
     String getSubstring(String str, int from){
         return str.substring(from);
     }
+
+    @Test
+    void intStream(){
+        int a = IntStream.rangeClosed(0, 100).reduce((x,y)-> x+y).orElseThrow();
+        int sum = 0;
+        for (int i=0; i<101; i++){
+            sum+=i;
+        }
+        assertEquals(sum, a);
+    }
+
+
 }
